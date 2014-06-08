@@ -1,0 +1,11 @@
+<div ng-controller="PortfolioCtrl" class="well">
+  <p class="caption">This is the slideshowImg view.</p>
+  <div ng-repeat="work in portfolio">
+    <ul>
+      <li ng-repeat="image in work.webDevelopment" class="text-center">
+        <img class="thumbnail" ng-src="{{image.imageUrl}}" />
+        <p>{{image.title}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
